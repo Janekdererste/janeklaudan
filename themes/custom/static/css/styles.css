@@ -1,0 +1,44 @@
+html, body, main, #content {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Helvetica Neue',
+    'Arial Nova',
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+
+
+.mainPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.map {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+
+}
+
+#popup {
+    width: 22rem;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    padding: 0.1rem 1rem 1rem 1rem;
+}
