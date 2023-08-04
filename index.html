@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <head>
     <meta charset="UTF-8">
     <title>JanekLaudan</title>
@@ -9,6 +10,7 @@
         :root {
             --header: #04A777;
             --highlight: #cd036d;
+            --highlight-text: #fff;
             --text: #1c1d45;
             --background: #fff;
         }
@@ -17,8 +19,7 @@
             :root {
                 --header: #2ebdcc;
                 --highlight: #2ebdcc;
-
-
+                --highlight-text: #FAFAFA;
                 --text: #FAFAFA;
                 --background: #232327;
             }
@@ -44,9 +45,16 @@
             display: grid;
             justify-content: center;
         }
+        
+        @media screen and (min-width: 30rem) {
+            body {
+                align-content: center;
+            }
+        }
 
         main {
             max-width: 24rem;
+            padding: 1rem;
         }
 
         a {
@@ -54,10 +62,12 @@
             text-decoration: none;
             padding: 0 2px 2px;
             margin: 0 -2px -2px;
+            transition-duration: 0.3s;
         }
 
         a:hover {
             background: var(--highlight);
+            color: var(--highlight-text);
             box-shadow: none;
         }
 
@@ -68,6 +78,8 @@
         .horizontal-list {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .horizontal-list-item {
@@ -84,8 +96,8 @@
     <h1>janeklaudan</h1>
     <p>Hi! I'm a research associate at the department of
         <a href="https://vsp.berlin/en/" target="_blank">Transport Systems Planning and Telematics</a> working on
-        transport modelling with MATSim. My favorite project at the moment is this <a
-                href="https://github.com/Janekdererste/rust_q_sim" target="_blank">attempt</a> to parallelize
+        transport modelling with MATSim. My favorite project at the moment is <a
+                href="https://github.com/Janekdererste/rust_q_sim" target="_blank">this attempt</a> to parallelize
         our model.
     </p>
     <p>
