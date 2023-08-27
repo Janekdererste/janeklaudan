@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Personal Homepage of Janek Laudan">
 <head>
     <meta charset="UTF-8">
-    <title>JanekLaudan</title>
+    <title>janeklaudan</title>
 
     <style>
 
@@ -75,6 +76,19 @@
 
         }
 
+        h1 > a {
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            transition-duration: 0s;
+            color: inherit;
+        }
+
+        h1 > a:hover {
+            background: none;
+            color: inherit;
+        }
+
         .horizontal-list {
             list-style: none;
             padding: 0;
@@ -87,13 +101,14 @@
         }
 
         .horizontal-list-item:not(:last-child)::after {
-            content: ' \2022';
+            content: '\2022';
+            margin: 0 4px;
         }
     </style>
 </head>
 <body>
 <main>
-    <h1>janeklaudan</h1>
+    <h1><a href="https://janeklaudan.com">janeklaudan</a></h1>
     <p>Hi! I'm a research associate at the department of
         <a href="https://vsp.berlin/en/" target="_blank">Transport Systems Planning and Telematics</a> working on
         transport modelling with MATSim. My favorite project at the moment is <a
